@@ -7,9 +7,7 @@ algorithm for this problem?
 */
 
 // binary search = O(log n);
-int binsearch(int n,
-              const int S[],
-              int x)
+int binsearch(int n, const int S[], int x)
 {
     int low, high, mid;
     low = 1;
