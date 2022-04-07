@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// O(n^2)
 void exchangesort(int S[])
 {
     int i, j, n;
     int temp = 0;
-    for (i = 1; i <= n - 1; i++)
+    for (i = 0; i <= n - 1; i++)
     {
         for (j = i + 1; j <= n; j++)
         {
