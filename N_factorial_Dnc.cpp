@@ -3,7 +3,7 @@ idea->  1. low , high 설정 + limit low -> 1 , limit high -> n => 1*2*3 ... *n = 
         2. 1차원 배열 : lowㅁㅁㅁㅁㅁㅁㅁㅁㅁhigh -> lowㅁㅁㅁㅁㅁㅁㅁㅁ(low+high)/2ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁhigh
         mid=(low+high)/2 이므로 문제를 1/2로 나눈다 -> recursive
 
-        T(n) = 2*T((1/2)n) + c (1차원배열에서 하나씩 채워넣기 = n )
+        T(n) = 2*T((1/2)n) + c (merge를 n번 수행 -> n )
         -> a=2, b=2 -> O(n)
 */
 
