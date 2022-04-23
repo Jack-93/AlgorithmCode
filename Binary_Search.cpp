@@ -23,7 +23,7 @@ int Bin(int n, const int s[], int x)
             low = mid + 1;
         }
     }
-    cout << location + 1;
+    cout << location;
 
     return 0;
 }
