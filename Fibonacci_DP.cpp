@@ -9,23 +9,19 @@ int fibo(int n)
     f[0] = 0;
     f[1] = 1; // 초기값 설정 -필수
 
-    if (n <= 1)
+    for (int i = 2; i <= n; i++)
     {
-        return n;
-    }
-    else
-    {
-        for (int i = 2; i <= n; i++)
-        {
-            f[i] = f[i - 2] + f[i - 1]; // DP
-        }
+        f[i] = f[i - 2] + f[i - 1]; // DP
     }
     return f[n];
 }
 
 int main()
 {
-    cout << fibo(7);
+    int n;
+    cin >> n;
+
+    cout << fibo(n);
 
     return 0;
 }

@@ -1,27 +1,20 @@
 #include <iostream>
+
 using namespace std;
-/*
-problem : Determine whether x  S
-instance : S = [13, 2, 5, 8, 9, 10, 11, 7], x = 7 or 6 answer → yes or no
-algorithm for this problem?
-*/
 
-// binary search = O(log n);
-int binsearch(int n, const int S[], int x)
+int Bin(int n, const int s[], int x)
 {
-    int low, high, mid;
-    low = 1;
-    high = n;
-    int location = 0;
+    int low = 1;
+    int mid;
+    int high = n;
 
-    while (low <= high && location == 0)
+    int location = 0;
+    while (location == 0 && low <= high)
     {
         mid = (low + high) / 2;
-        if (x == S[mid])
-        {
+        if (x == s[mid])
             location = mid;
-        }
-        else if (x < S[mid])
+        else if (x < s[mid])
         {
             high = mid - 1;
         }
@@ -30,7 +23,6 @@ int binsearch(int n, const int S[], int x)
             low = mid + 1;
         }
     }
-
     cout << location + 1;
 
     return 0;
@@ -38,9 +30,9 @@ int binsearch(int n, const int S[], int x)
 
 int main()
 {
-    const int S[] = {13, 2, 5, 8, 9, 10, 11, 7};
+    const int S[] = {1, 2, 4, 8, 16, 32, 64, 128};
 
-    binsearch(8, S, 5);
+    Bin(8, S, 4);
 
     return 0;
 }

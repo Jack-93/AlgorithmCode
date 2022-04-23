@@ -10,7 +10,7 @@ int main()
 
     //3부터 입력받은 수까지 늘려가면서 하나씩 다 넣어보고
     //모듈러연산으로 Prime number인지 아닌지 체크
-    //2중포문 -> (3~n)*(2~i(=n)) = O(n^2)
+    //O(n)
     for (int i = 3; i <= number; i++)
     {
         check = true;
