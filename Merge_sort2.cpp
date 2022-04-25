@@ -5,7 +5,7 @@ using namespace std;
 // list[left ~  mid] + list[mid+1 ~ high]
 // O(nlogn) -> BC,AC,WC
 
-void merge2(int list[], int low, int mid, int high) // ?‹¤? œ ë¶„ì—´?œ ë¦¬ìŠ¤?Š¸?“¤?„ ?•©ì¹˜ëŠ” ?•¨?ˆ˜
+void merge2(int list[], int low, int mid, int high)
 {
     mid = (low + high) / 2;
     int i = low; // list[]ÀÇ ÀÎµ¦½º
